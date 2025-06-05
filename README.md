@@ -1,5 +1,14 @@
 # 📄 README — Floating-Point Conversion in x86 Assembly
 
+<p align="center">
+  <img src="asm number.png" alt="Logo" width="600">
+</p>
+<p align="center">
+  <em>Created using Canva AI tools. I do not claim ownership of the visual elements.<br>
+  If this image presents an issue, please feel free to contact me.</em>
+</p>
+
+
 ## 📌 Overview
 This assembly program reads an **integer input from the keyboard** (with optional sign), processes it, and **converts it into a 32-bit IEEE 754-style floating-point binary format**. The final result is stored in the `numero` variable as a `DWORD`.
 
