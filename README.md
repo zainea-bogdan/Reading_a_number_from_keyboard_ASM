@@ -1,4 +1,4 @@
-# 📄 README — Floating-Point Conversion in x86 Assembly
+# Floating-Point Conversion in x86 Assembly
 
 <p align="center">
   <img src="asm number.png" alt="Logo" width="600">
@@ -8,11 +8,12 @@
   If this image presents an issue, please feel free to contact me.</em>
 </p>
 
+![Assembly](https://img.shields.io/badge/_-ASM-black.svg?style=for-the-badge&logo=assemblyscript&logoColor=white)
 
-## 📌 Overview
+## Overview
 This assembly program reads an **integer input from the keyboard** (with optional sign), processes it, and **converts it into a 32-bit IEEE 754-style floating-point binary format**. The final result is stored in the `numero` variable as a `DWORD`.
 
-## 🧠 Features
+## Features
 
 - **Keyboard Input Parsing**:
   - Accepts digits character by character.
@@ -32,20 +33,20 @@ This assembly program reads an **integer input from the keyboard** (with optiona
     - Lower 16 bits (mantissa part 2)
     - Upper 16 bits (sign + exponent + mantissa part 1)
 
-## 🧪 Input Format
+## Input Format
 
 - Type a number using the keyboard.
   - Example: `-23` or `45`
 - Press `Enter` to end input and trigger conversion.
 
-## 🛠 Technical Notes
+## Technical Notes
 
 - Uses DOS interrupts (`int 21h`) for input/output.
 - Assumes small memory model and a 200h stack.
 - Relies on bitwise operations (`SHL`, `SHR`, `AND`, `ROR`) for floating-point logic.
 - Emulates floating-point encoding manually (without FPU).
 
-## 💾 Output
+##  Output
 
 - The resulting 32-bit representation is stored in the `numero` variable in memory:
   - `numero` (DWORD): custom float in IEEE 754-like format
